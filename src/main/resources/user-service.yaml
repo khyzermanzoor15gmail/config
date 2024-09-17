@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user-service
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/userdb
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka/
+
+server:
+  port: 8081
+
+
